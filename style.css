@@ -22,8 +22,8 @@ body {
 
 
     display: grid;
-    grid-template-columns: 150px auto;
-    grid-template-rows: 100px auto 140px;
+    grid-template-columns: 10em auto;
+    grid-template-rows: 50px auto 50px;
     grid-template-areas:
         "header  header"
         "sidebar main"
@@ -33,10 +33,13 @@ body {
 header {
     grid-area: header;
 
-    padding: 45px;
     padding-right: 90px;
 
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    border: 1px solid salmon;
 }
 
 
@@ -73,12 +76,14 @@ li {
 footer {
     grid-area: footer;
 
-
-    padding: 45px;
-
+    padding-right: 90px;
+    padding-left: 90px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid #00ff5e;
 }
 
 main section {
@@ -182,20 +187,23 @@ main .border-junior {
 
 
 .up {
+
     width: 32px;
     height: 30px;
-    background-color: #a6a6a63d;
-    border-radius: 50%;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #a6a6a63d;
+    border-radius: 50%;
 }
 
 
 @media screen and (max-width:748px) {
     body {
         grid-template-columns: 100%;
-        grid-template-rows: 100px auto 140px;
+        grid-template-rows: 55px auto 50px;
         grid-template-areas:
             "header"
             "main"
