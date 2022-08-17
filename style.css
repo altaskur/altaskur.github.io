@@ -34,7 +34,8 @@ header {
     grid-area: header;
 
     height: 80px;
-    padding-right: 90px;
+    padding-right: 5%;
+    padding-left: 5%;
 
     display: flex;
     justify-content: flex-end;
@@ -51,7 +52,6 @@ header {
 
 
 aside {
-
     grid-area: sidebar;
 
     height: 100%;
@@ -97,8 +97,8 @@ li {
 footer {
     grid-area: footer;
 
-    padding-right: 90px;
-    padding-left: 90px;
+    padding-right: 5%;
+    padding-left: 5%;
 
     display: flex;
     justify-content: space-between;
@@ -214,9 +214,11 @@ main .border-junior {
 
 
 .circle {
-
     width: 32px;
     height: 30px;
+
+    min-width: 30px;
+    min-height: 30px;
 
     margin: 10px;
 
@@ -253,6 +255,10 @@ main .border-junior {
     header {
         text-align: center;
         padding: 15px;
+    }
+
+    aside {
+        display: none;
     }
 
     main {
