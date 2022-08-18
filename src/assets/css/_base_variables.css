@@ -1,0 +1,26 @@
+/* File: <_base_variables.css> */
+
+:root {
+
+    --font-primary: 'Lato', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+
+    --color-text-primary: #fff;
+    --color-text-secondary: #000;
+
+    --color-bg-primary: #fff;
+    --color-bg-secondary: #9e9e9e;
+    --color-bg-site: #353535;
+
+    --color-border-primary: #f0f0f0;
+    --color-border-secondary: #9e9e9e;
+
+    --color-links: #fff;
+
+    --color-danger: #f44336;
+    --color-success: #4caf50;
+
+    --theme-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    --theme-transition-time: 0.3s;
+    --theme-transition-function: ease-in-out;
+}

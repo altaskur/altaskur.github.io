@@ -1,0 +1,27 @@
+.navbar-top {}
+
+.navbar-top .navbar-top-inner {
+
+    position: fixed;
+    height: 50px;
+    width: 100%;
+
+}
+
+.navbar-top .navbar-top-inner .navbar-cnt {
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 20px;
+    height: 100%;
+}
+
+.navbar-top .navbar-top-inner .navbar-cnt .navbar-item {
+
+    font-size: 16px;
+}
+
+.navbar-top .navbar-top-inner .navbar-cnt .navbar-item .item-ico {
+    margin-right: 5px
+}

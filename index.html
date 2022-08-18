@@ -1,120 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./assets/bootstrap-icons-1.9.1/bootstrap-icons-1.9.1/bootstrap-icons.css">
     <title>Altaskur Site</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="title" content="Altaskur Site" />
+    <meta name="description" content="" />
+    <meta name="keywords"
+        content="Google ya no le da tanta importancia, pero todavía las considera (coincidiendo con tus negritas" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="Tiene que coincidir con tu H1" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:locale" content="" />
+
+    <meta name="dc.language" content="es/ES" />
+    <meta name="dc.source" content="Url" />
+    <meta name="dc.title" content="Coincide con tu H1" />
+    <meta name="dc.description" content="same" />
+
+    <link rel="shortcut icon" href="../path/imgSample/logos/favicon.png(ico, fav, svg)" />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/styles.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="./src/assets/vendor/bootstrap-icons-1.9.1/bootstrap-icons-1.9.1/bootstrap-icons.css">
 </head>
 
 <body>
+
     <header>
-        <ul>
-            <li>
-                🙋‍♂️ About Me
-            </li>
-            <li>
-                📝 My Projects
-            </li>
-            <li>
-                📚 Wiki
-            </li>
-        </ul>
+        <nav class="navbar-top">
+            <div class="navbar-top-inner">
+
+                <ul class="navbar-cnt">
+                    <li class="navbar-item le-pones-aquí-la-clase-diferente">
+                        <i class="item-ico">🙋‍♂️</i>About Me
+                    </li>
+
+                    <li class="navbar-item">
+                        <i class="item-ico">📝</i>My Projects
+                    </li>
+
+                    <li class="navbar-item">
+                        <i class="item-ico">📚</i>Wiki
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
     </header>
-    <div id="aside-main-warper">
-        <aside>
-            <div class="circle"></div>
-            <div class="vertical-line"></div>
-            <div class="circle"></div>
-            <div class="vertical-line"></div>
-            <div class="circle"></div>
-        </aside>
-        <main>
-            <div class="warper">
-                <section class="logo"></section>
-                <section>
-                    <h1>Altaskur</h1>
-                    <hr>
-                    <h2> Junior developer </h2>
-                    <hr class="border-junior">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </section>
+    <!-- 
+
+    <section>
+        <article>
+            <header>
+                <h2>Título que me estoy inventando</h2>
+            </header>
+            <h3>Cosas</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque commodi soluta explicabo sed ab recusandae! Eius quidem suscipit pariatur laudantium dolore aliquam incidunt minima, quas asperiores rerum dicta quasi eum voluptates itaque soluta! Quasi dolore ea reiciendis odio voluptate praesentium nulla? Fugit, magnam! Dignissimos, blanditiis quisquam. Aliquam maiores blanditiis aliquid?</p>
+        </article>
+    </section> -->
+
+
+    <aside>
+        <div class="aside-cnt">
+            <div class="inner">
+
+                <div class="circle circle-small ux-aside-previous ui-hidden"></div>
+
+                <div class="circle circle-regular ux-aside-current"></div>
+
+                <div class="circle circle-small ux-aside-next ui-hidden"></div>
             </div>
-            <div class="warper">
+        </div>
+    </aside>
 
-                <section>
-                    <h1>🙋‍♂️ About me</h1>
-                    <hr>
-                    <h2> Junior developer </h2>
-                    <hr class="border-junior">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <article>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacinia pulvinar libero
-                            eget
+    <main>
+        <header>
+            <h1 class="h1">Título 1</h1>
+        </header>
 
-                            faucibus. Aenean dapibus at dolor sit amet lobortis. Praesent diam est, tristique nec tellus
-                            ut,
+        <h2 class="h2">Este es un subtítulo</h2>
+        <p>Desde que te vi con la pata de palo, dije para mi, malo, malo, malo</p>
 
-                            pellentesque condimentum mauris. Mauris laoreet justo nec ultrices eleifend. Vestibulum quis
-                            est
-                            nec
+        <h3 class="h3">Este es un subtítulo 2</h3>
 
-                            risus semper tristique. Nam sed sollicitudin sapien. Etiam non dui enim.
-                        </p>
-                        <p>
-                            In non tortor sodales, hendrerit augue ut, laoreet metus. Proin pretium massa in dignissim
-                            rhoncus.
-
-                            Aenean tempor scelerisque consectetur. In vehicula sit amet enim eget sodales. Nulla eu quam
+        <h4 class="h2"></h4>
 
 
-                            Ut gravida sit amet felis eget fermentum. Pellentesque euismod dolor tellus, eu hendrerit
-                            neque
 
-                            accumsan et. Aliquam semper, lacus sit amet ultricies egestas, arcu sem dignissim nibh, a
 
-                            magna ligula sed purus. Cras luctus sollicitudin justo. Donec molestie lacus nec nulla
-                            interdum
 
-                            ullamcorper. In non lacus eu elit maximus scelerisque. Nulla facilisi. Proin id augue
-                            egestas,
 
-                            ultricies justo sed, tincidunt magna.
-                        </p>
-                    </article>
-                </section>
-            </div>
-        </main>
+
+
+
+
+
+        <div class="warper">
+            <section class="logo"></section>
+            <section>
+                <h1>Altaskur</h1>
+                <hr>
+                <h2> Junior developer </h2>
+                <hr class="border-junior">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+        </div>
+        <div class="warper">
+
+            <section>
+                <h1>🙋‍♂️ About me</h1>
+                <hr>
+                <h2> Junior developer </h2>
+                <hr class="border-junior">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <article>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacinia pulvinar libero
+                        eget
+
+                        faucibus. Aenean dapibus at dolor sit amet lobortis. Praesent diam est, tristique nec tellus
+                        ut,
+
+                        pellentesque condimentum mauris. Mauris laoreet justo nec ultrices eleifend. Vestibulum quis
+                        est
+                        nec
+
+                        risus semper tristique. Nam sed sollicitudin sapien. Etiam non dui enim.
+                    </p>
+                    <p>
+                        In non tortor sodales, hendrerit augue ut, laoreet metus. Proin pretium massa in dignissim
+                        rhoncus.
+
+                        Aenean tempor scelerisque consectetur. In vehicula sit amet enim eget sodales. Nulla eu quam
+
+
+                        Ut gravida sit amet felis eget fermentum. Pellentesque euismod dolor tellus, eu hendrerit
+                        neque
+
+                        accumsan et. Aliquam semper, lacus sit amet ultricies egestas, arcu sem dignissim nibh, a
+
+                        magna ligula sed purus. Cras luctus sollicitudin justo. Donec molestie lacus nec nulla
+                        interdum
+
+                        ullamcorper. In non lacus eu elit maximus scelerisque. Nulla facilisi. Proin id augue
+                        egestas,
+
+                        ultricies justo sed, tincidunt magna.
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
     </div>
 
 
     <footer>
-        <ul>
-            <li> <i class="bi bi-twitch"></i> Twitch</li>
-            <li> <i class="bi bi-github"></i> GitHub</li>
-            <li> <i class="bi bi-twitter"></i> Twitter</li>
-        </ul>
-        <span class="circle">
-            <i class="bi bi-arrow-up"></i>
-        </span>
+        <nav class="navbar-footer">
+            <div class="navbar-footer-inner">
+
+                <ul class="navbar-cnt">
+                    <li class="navbar-item le-pones-aquí-la-clase-diferente">
+                        <i class="item-ico bi bi-twitch"></i>Twitch
+                    </li>
+
+                    <li class="navbar-item">
+                        <i class="item-ico bi bi-github"></i>GitHub
+                    </li>
+                    </li>
+
+                    <li class="navbar-item">
+                        <i class="item-ico bi bi-twitter"></i>Twitter
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+        <div class="cmp-back-to-top ux-back-to-top ui-hidden">
+            <div class="back-to-top-cnt">
+                <i class="bi bi-arrow-up"></i>
+            </div>
+
+        </div>
     </footer>
+
+    <script src="./src/js/main.js"></script>
 </body>
 
 </html>
