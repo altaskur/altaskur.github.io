@@ -3,3 +3,7 @@ body {
     background-color: var(--color-bg-site);
     padding: 50px;
 }
+
+main {
+    margin-left: 130px;
+}
