@@ -166,7 +166,10 @@ sup {
    */
 
 img {
-    border-style: none;
+    border-style: none !important;
+    width: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Forms

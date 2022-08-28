@@ -20,15 +20,28 @@
 
 .navbar-top .navbar-top-inner .navbar-cnt .navbar-item {
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-top .navbar-top-inner .navbar-cnt .navbar-item .item-ico {
     margin-right: 5px
 }
 
+.navbar-top-inner .navbar-cnt .navbar-item .ico-logo {
+
+
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-size: contain;
+    background-image: url("../img/logos/altas_logo.png");
+}
+
 /* Footer  */
 
-.footer-cnt {
+.footer-inner {
     position: fixed;
 
     height: 50px;
@@ -39,7 +52,7 @@
     background-color: var(--color-bg-site);
 }
 
-.footer-inner {
+.footer-cnt {
     display: flex;
     justify-content: space-between;
     align-items: center;
