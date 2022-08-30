@@ -72,3 +72,17 @@
 .navbar-footer .navbar-footer-inner .navbar-cnt .navbar-item .item-ico {
     margin-right: 6px;
 }
+
+
+
+@media screen and (max-width: 958px) {
+    .navbar-top .navbar-top-inner {
+        left: 0;
+        right: 8px;
+    }
+
+    .footer-inner {
+        left: 8px;
+        right: 8px;
+    }
+}

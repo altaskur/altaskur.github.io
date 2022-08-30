@@ -74,3 +74,12 @@
 
     background-color: var(--color-border-primary);
 }
+
+@media screen and (max-width: 958px) {
+    aside {
+        position: unset;
+        display: none;
+    }
+
+
+}

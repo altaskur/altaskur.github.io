@@ -7,3 +7,23 @@ body {
 .main-inner {
     margin-left: 130px;
 }
+
+#home {
+    padding-bottom: 80px;
+}
+
+#about-me {
+
+    padding-top: 80px;
+}
+
+@media screen and (max-width: 958px) {
+    .main-inner {
+        margin-left: 0px;
+        margin: auto;
+    }
+
+    #home .section-inner {
+        display: block;
+    }
+}

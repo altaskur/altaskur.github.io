@@ -62,14 +62,15 @@
     margin-top: 40px;
 
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(auto-fit, 20em);
+    grid-template-rows: repeat(auto-fit, 186px);
     justify-items: center;
     grid-gap: 10%;
 }
 
 .projects-grid .grid-cell {
     max-width: 20em;
+    width: 40em;
     background: #424242;
     box-shadow: -1px 0px 9px 6px rgba(0, 0, 0, 0.1);
 }
@@ -78,7 +79,7 @@
     padding: 15px;
 
     max-width: 40em;
-    width: max-content;
+    width: 40em;
 
     display: flex;
     flex-direction: column;
@@ -125,4 +126,56 @@
 
 .circle-red {
     background: #ff5858;
+}
+
+
+@media screen and (max-width: 958px) {
+    #home {
+        padding-bottom: 0px;
+    }
+
+    #home .section-inner {
+        display: block;
+        padding-top: 80px;
+
+        text-align: center;
+    }
+
+    #home .section-inner .section-cnt {
+        display: block;
+        width: 100%;
+        height: max-content;
+        text-align: center;
+    }
+
+    #home .h1,
+    #home .h2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #projects {
+        padding-top: 80px;
+        height: max-content;
+    }
+
+
+    #projects .projects-grid {
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        margin-bottom: 80px;
+    }
+
+    .h1 {
+        font-size: 40px;
+    }
+
 }
