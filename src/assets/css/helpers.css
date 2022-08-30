@@ -36,3 +36,7 @@
 .align-right {
     align-items: flex-end;
 }
+
+.ui-hidden {
+    visibility: hidden;
+}
