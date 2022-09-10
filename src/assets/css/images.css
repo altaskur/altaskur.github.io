@@ -1,0 +1,22 @@
+.icon {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-size: contain;
+}
+
+.vscode {
+    background-image: url("../img/logos/altas_logo.png");
+}
+
+.tux {
+    background-image: url("../img/logos/tux_logo.png");
+}
+
+.javaScript {
+    background-image: url("../img/logos/js_logo.png");
+}
+
+.redes {
+    background-image: url("../img/logos/redes.png");
+}
