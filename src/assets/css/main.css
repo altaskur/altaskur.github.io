@@ -2,10 +2,12 @@ body {
     position: relative;
     background-color: var(--color-bg-site);
     padding: 50px;
+    scroll-behavior: smooth;
 }
 
 .main-inner {
     margin-left: 130px;
+    scroll-behavior: smooth;
 }
 
 #home {

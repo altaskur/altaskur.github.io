@@ -6,6 +6,7 @@ body {
     font-weight: normal;
     line-height: 1.5;
     color: var(--color-text-primary);
+    scroll-behavior: smooth;
 }
 
 
@@ -48,7 +49,7 @@ p-min {}
 
 strong,
 .strong {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 a {
@@ -75,8 +76,19 @@ li {
     margin: 0;
 }
 
-article {
-    font-family: 'Courier New', Courier, monospace;
+#about article {
+    /* font-family: 'Courier New', Courier, monospace; */
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+
 }
 
 /* Do Stuff... */

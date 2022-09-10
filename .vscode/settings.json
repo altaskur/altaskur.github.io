@@ -95,5 +95,13 @@
     "voluptates"
   ],
   "liveServer.settings.port": 5501,
-  "cSpell.ignoreWords": ["pomodoro"]
+  "cSpell.ignoreWords": ["pomodoro"],
+  "cSpell.customDictionaries": {
+    "custom-dictionary-workspace": {
+      "name": "custom-dictionary-workspace",
+      "path": "${workspaceFolder:altaskur.github.io}/.cspell/custom-dictionary-workspace.txt",
+      "addWords": true,
+      "scope": "workspace"
+    }
+  }
 }
