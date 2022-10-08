@@ -133,6 +133,25 @@
     background: #ff5858;
 }
 
+.li-grid {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20em);
+    grid-template-rows: repeat(186px);
+    justify-items: center;
+    grid-gap: 10%;
+}
+
+#vscode .li-grid>li {
+    width: max-content;
+    height: max-content;
+
+    padding: 8px;
+
+    background: #424242;
+    box-shadow: -1px 0px 9px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 @media screen and (max-width: 958px) {
     #home {

@@ -29,6 +29,11 @@
     margin-right: 5px
 }
 
+.navbar-cnt .icon {
+    background-position: 0px 3px;
+    background-size: 19px;
+}
+
 .navbar-top-inner .navbar-cnt .navbar-item .ico-logo {
 
 

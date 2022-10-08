@@ -3,10 +3,12 @@
     width: 21px;
     height: 21px;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .vscode {
-    background-image: url("../img/logos/altas_logo.png");
+
+    background-image: url("../img/logos/vscode_logo.png");
 }
 
 .tux {
@@ -19,4 +21,12 @@
 
 .redes {
     background-image: url("../img/logos/redes.png");
+}
+
+
+.title .icon {
+    background-size: 48px;
+    width: 50px;
+    height: 50px;
+    background-position: 0px 4px;
 }
