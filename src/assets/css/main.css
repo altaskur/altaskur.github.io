@@ -14,14 +14,11 @@ html>* {
     scroll-behavior: smooth;
 }
 
-#home {
-    padding-bottom: 80px;
+section {
+    scroll-behavior: smooth;
+    padding-top: 50px;
 }
 
-#about-me {
-
-    padding-top: 80px;
-}
 
 @media screen and (max-width: 958px) {
     .main-inner {
