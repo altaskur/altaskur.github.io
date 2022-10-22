@@ -10,13 +10,8 @@ html>* {
 }
 
 .main-inner {
+    margin-top: -50px;
     margin-left: 130px;
-    scroll-behavior: smooth;
-}
-
-section {
-    scroll-behavior: smooth;
-    padding-top: 50px;
 }
 
 

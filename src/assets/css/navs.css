@@ -1,5 +1,4 @@
 .navbar-top .navbar-top-inner {
-
     position: fixed;
     height: 50px;
 
@@ -8,6 +7,7 @@
     right: 50px;
 
     background-color: var(--color-bg-site);
+    z-index: 1;
 }
 
 .navbar-top .navbar-top-inner .navbar-cnt {
@@ -32,6 +32,12 @@
 .navbar-cnt .icon {
     background-position: 0px 3px;
     background-size: 19px;
+}
+
+.navbar-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-top-inner .navbar-cnt .navbar-item .ico-logo {
@@ -74,10 +80,10 @@
     height: 100%;
 }
 
+
 .navbar-footer .navbar-footer-inner .navbar-cnt .navbar-item .item-ico {
     margin-right: 6px;
 }
-
 
 
 @media screen and (max-width: 958px) {
