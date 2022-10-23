@@ -1,0 +1,168 @@
+.ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+.ul .ul-inner {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-row: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+
+}
+
+#vscode .ul-inner .li {
+    width: 160px;
+    height: 80px;
+}
+
+#vscode .li .li-inner {
+    height: 100%;
+    padding: 10px;
+
+    border: 1px solid var(--color-border-tertiary);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: var(--color-text-primary);
+
+    background: #424242;
+    border: 1px solid #242424;
+    box-shadow: 0px 9px 15px rgba(41, 41, 41, 0.86);
+    border-radius: 10px;
+}
+
+#vscode .li .li-inner .icon {
+
+    width: calc(100%);
+    height: calc(100%);
+
+    background-position: center;
+}
+
+#redes .ul .ul-inner {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 150px));
+    grid-row: 1fr;
+    grid-gap: 50px;
+    justify-content: center;
+
+}
+
+
+
+#redes .ul-inner .li {
+    width: 160px;
+    height: 200px;
+}
+
+#redes .li .li-inner {
+    height: 100%;
+
+    border: 1px solid var(--color-border-tertiary);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    text-align: center;
+    color: var(--color-text-primary);
+
+    background: #424242;
+    border: 1px solid #242424;
+    box-shadow: 0px 9px 15px rgba(41, 41, 41, 0.86);
+    border-radius: 10px;
+    gap: 20px;
+
+    overflow: hidden;
+}
+
+#redes .li .li-inner .li-img {
+
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+#redes .li-img .ico {
+
+    width: 75%;
+    height: 75%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+
+.li.twitch .li-img:hover {
+    background-color: var(--twitch-color);
+}
+
+.li.twitter .li-img:hover {
+    background-color: var(--twitter-color);
+}
+
+.li.github .li-img:hover {
+    background-color: var(--github-color);
+}
+
+.li.discord .li-img:hover {
+    background-color: var(--discord-color);
+}
+
+#projects .ul-inner .li {
+    width: 400px;
+    height: 200px;
+}
+
+#projects .li .li-inner {
+    height: fit-content;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+    border: 1px solid #242424;
+    border-radius: 10px;
+    padding: 18px;
+
+    background: #424242;
+    box-shadow: 0px 9px 15px rgba(41, 41, 41, 0.86);
+
+    text-align: left;
+    color: var(--color-text-primary);
+}
+
+#projects .li .li-inner>* {
+    width: 100%;
+}

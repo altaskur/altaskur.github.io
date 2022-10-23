@@ -29,7 +29,7 @@ section:not(#home) .section-inner .section-cnt:nth-child(2) {
 section:not(#home) .section-inner {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 section:not(#home) .section-inner .section-cnt {

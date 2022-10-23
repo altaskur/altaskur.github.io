@@ -5,8 +5,10 @@
     --font-primary: 'Lato', sans-serif;
     --font-secondary: 'Roboto', sans-serif;
 
-    --color-text-primary: #fff;
+    --color-text-primary: rgb(239, 239, 239);
     --color-text-secondary: #000;
+    --color-text-tertiary: #8b949e;
+    --color-text-quaternary: #6e7681;
 
     --color-bg-primary: #fff;
     --color-bg-secondary: #9e9e9e;
@@ -14,13 +16,21 @@
 
     --color-border-primary: #f0f0f0;
     --color-border-secondary: #9e9e9e;
+    --color-border-tertiary: #6e7681;
 
     --color-links: #fff;
 
     --color-danger: #f44336;
     --color-success: #4caf50;
+    --color-muted: #9e9e9e;
 
     --theme-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     --theme-transition-time: 0.3s;
     --theme-transition-function: ease-in-out;
+
+    --twitch-color: #6441a5;
+    --twitter-color: #1da1f2;
+    --discord-color: #7289da;
+    --github-color: #333;
+
 }

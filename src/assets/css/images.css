@@ -41,3 +41,55 @@
     height: 50px;
     background-position: 0px 4px;
 }
+
+.autoRenameTag {
+    background-image: url("../img/logos/extensions/autoRenameTag.png");
+}
+
+.autoImport {
+    background-image: url("../img/logos/extensions/autoImport.png");
+}
+
+.betterComments {
+    background-image: url("../img/logos/extensions/betterComments.png");
+}
+
+.cloak {
+    background-image: url("../img/logos/extensions/cloak.png");
+}
+
+.codeSpell {
+    background-image: url("../img/logos/extensions/codeSpell.png");
+}
+
+.cssPeek {
+    background-image: url("../img/logos/extensions/cssPeek.png");
+}
+
+.discordPresence {
+    background-image: url("../img/logos/extensions/discordPresence.png");
+}
+
+.electronSnippets {
+    background-image: url("../img/logos/extensions/electronSnippets.png");
+}
+
+.enfocado {
+    background-image: url("../img/logos/extensions/enfocado.png");
+}
+
+.twitchWhite {
+    background-image: url("../img/logos/TwitchWhite.svg");
+}
+
+.discordWhite {
+    background-image: url("../img/logos/Discord-Logo-White.png");
+}
+
+.githubWhite {
+    background-image: url("../img/logos/GitHub-Mark-Light-64px.png");
+}
+
+.twitterWhite {
+    background-image: url("../img/logos/Twitter_White.png");
+}

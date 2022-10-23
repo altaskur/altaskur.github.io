@@ -1,11 +1,11 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
 body {
     position: relative;
     background-color: var(--color-bg-site);
     padding: 50px;
-    scroll-behavior: smooth !important;
-}
-
-html>* {
     scroll-behavior: smooth !important;
 }
 
