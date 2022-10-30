@@ -17,6 +17,10 @@
     background-repeat: no-repeat;
 }
 
+.altasLogo {
+    background-image: url("../img/logos/altas_logo.png");
+}
+
 .vscode {
 
     background-image: url("../img/logos/vscode_logo.png");

@@ -104,9 +104,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-
 }
 
 #redes .li-img .ico {
@@ -165,4 +162,10 @@
 
 #projects .li .li-inner>* {
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .ul-inner .li {
+        margin: auto;
+    }
 }

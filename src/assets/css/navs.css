@@ -6,7 +6,7 @@
     left: 50px;
     right: 50px;
 
-    background-color: var(--color-bg-site);
+    /* background-color: var(--color-bg-site); */
     z-index: 1;
 }
 
@@ -60,7 +60,7 @@
     bottom: 0;
     left: 50px;
     right: 50px;
-    background-color: var(--color-bg-site);
+    /* background-color: var(--color-bg-site); */
 }
 
 .footer-cnt {

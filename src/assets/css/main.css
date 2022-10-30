@@ -14,14 +14,38 @@ body {
     margin-left: 130px;
 }
 
+.image-stational {
+    /* width: 100vh;
+    height: 100vh; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 
-@media screen and (max-width: 958px) {
-    .main-inner {
-        margin-left: 0px;
-        margin: auto;
+    border: 1px solid #ae0000;
+
+    filter: grayscale(100%) saturate(10%) brightness(10%) contrast(90%);
+
+}
+
+.image-stational-inner {
+    width: 200%;
+    height: 100vh;
+    background-image: url(../img/background/halloween.png);
+    background-repeat: repeat-x;
+    background-size: auto 100vh;
+    background-color: #ae0000;
+    animation: slide 128s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0 0;
     }
 
-    #home .section-inner {
-        display: block;
+    100% {
+        background-position: -100% 0;
     }
 }

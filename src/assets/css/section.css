@@ -15,10 +15,14 @@ section:nth-child(1) {
 
 #home .section-cnt .section-item img {
     background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #ff5858;
+    background-size: cover;
+    background-image: url("../img/logos/altas_logo.png");
+    background-position: center;
+
     width: 139px;
     height: 139px;
+    min-width: 139px;
+    min-height: 139px;
 }
 
 section:not(#home) .section-inner .section-cnt:nth-child(2) {
@@ -50,4 +54,31 @@ section:not(#home) .section-inner .section-cnt:nth-child(2) {
     height: fit-content;
     flex-direction: column;
     justify-content: left;
+}
+
+@media screen and (max-width: 768px) {
+    #home .section-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section:not(#home) .section-inner .section-cnt:nth-child(1) {
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-inner .section-inner {
+        height: fit-content;
+    }
+
+    .main-inner {
+        margin: 0 auto;
+    }
+
+    aside {
+        display: none;
+        visibility: hidden;
+    }
 }
