@@ -1,5 +1,5 @@
 .aside-inner {
-    position: absolute;
+    position: fixed;
     top: 55px;
     left: 50px;
     bottom: 50px;

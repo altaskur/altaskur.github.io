@@ -1,0 +1,15 @@
+section div.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px;
+    height: 100vh;
+}
+
+section div.inner div.title-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    text-align: left;
+    justify-content: center;
+}

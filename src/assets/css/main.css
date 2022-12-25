@@ -4,7 +4,7 @@ main div.inner {
 
     flex-direction: row;
 
-    left: 0;
+    left: 0px;
     right: 0;
 
 }
@@ -61,15 +61,4 @@ main ul.logosList {
     display: flex;
     gap: 8px;
     margin-top: 12px;
-}
-
-section div.inner {
-    display: flex;
-    flex-direction: row;
-}
-
-section div.inner div.title-wrapper {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
 }
