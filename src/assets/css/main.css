@@ -1,51 +1,75 @@
-html {
-    scroll-behavior: smooth !important;
-}
+main div.inner {
+    position: absolute;
+    display: flex;
 
-body {
-    position: relative;
-    background-color: var(--color-bg-site);
-    padding: 50px;
-    scroll-behavior: smooth !important;
-}
+    flex-direction: row;
 
-.main-inner {
-    margin-top: -50px;
-    margin-left: 130px;
-}
-
-.image-stational {
-    /* width: 100vh;
-    height: 100vh; */
-    position: fixed;
-    top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
-    z-index: -1;
-
-    border: 1px solid #ae0000;
-
-    filter: grayscale(100%) saturate(10%) brightness(10%) contrast(90%);
 
 }
 
-.image-stational-inner {
-    width: 200%;
+main div.inner section {
     height: 100vh;
-    background-image: url(../img/background/holydays.jpg);
-    background-repeat: repeat-x;
-    background-size: auto 100vh;
-    background-color: #ae0000;
-    animation: slide 128s linear infinite;
+    min-height: min-content;
+    width: 100%;
+    border: solid red 1px;
+    overflow: hidden;
+    padding: 18px;
 }
 
-@keyframes slide {
-    0% {
-        background-position: 0 0;
-    }
+main div.inner section#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-    100% {
-        background-position: -100% 0;
-    }
+main div.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+main div.inner section#home div.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main div.inner section#home div.item {
+    height: min-content;
+}
+
+main div.inner section#home div.item .subitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.subitem .icon.altasLogo {
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+}
+
+main ul.logosList {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+section div.inner {
+    display: flex;
+    flex-direction: row;
+}
+
+section div.inner div.title-wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
 }

@@ -1,8 +1,10 @@
 /* FILE: <_typography.css> */
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 body {
     font-family: var(--font-primary);
-    font-size: 12pt;
+    font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
     font-weight: normal;
     line-height: 1.5;
     color: var(--color-text-primary);
@@ -40,12 +42,6 @@ h6 {
     margin-bottom: 12px;
     width: fit-content;
 }
-
-p {}
-
-p-max {}
-
-p-min {}
 
 strong,
 .strong {
@@ -91,16 +87,32 @@ li {
 
 }
 
-/* Do Stuff... */
+.title {
 
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.subtitle {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+
+    color: #AEAEAE;
+}
 
 .title::after {
 
     content: "";
     display: block;
     margin-top: 5px;
-    height: 5px;
-    width: 110%;
+    height: 2px;
+    width: 100%;
 
     background-color: var(--color-border-primary);
 }
@@ -110,10 +122,10 @@ li {
 .subtitle::after {
     content: "";
     display: block;
-    margin-top: 8px;
+    margin-top: 3px;
 
     height: 1px;
-    width: 88%;
+    width: 100%;
 
     background-color: var(--color-border-secondary);
 }
