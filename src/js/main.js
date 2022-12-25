@@ -1,45 +1,36 @@
-"use strict";
-let body = document.querySelector("html");
+'use strict'
 
-let home = document.querySelector("#home");
-let about = document.querySelector("#about-me");
-let projects = document.querySelector("#projects");
+import { generateSnowflake } from './snow'
 
-window.addEventListener("scroll", function (event) {
-  let homePosition = home.getBoundingClientRect().top;
-  let aboutPosition = about.getBoundingClientRect().top;
-  let projectsPosition = projects.getBoundingClientRect().top;
+const about = document.querySelector('#about-me')
+const projects = document.querySelector('#projects')
 
-  let circlePrevious = document.querySelector(".ux-aside-previous");
-  let circleCurrent = document.querySelector(".ux-aside-current");
-  let circleNext = document.querySelector(".ux-aside-next");
-  //   console.table(
-  //     "home",
-  //     homePosition,
-  //     "about",
-  //     aboutPosition,
-  //     "projects",
-  //     projectsPosition
-  //   );
+window.addEventListener('scroll', () => {
+  const aboutPosition = about.getBoundingClientRect().top
+  const projectsPosition = projects.getBoundingClientRect().top
+
+  const circlePrevious = document.querySelector('.ux-aside-previous')
+  const circleCurrent = document.querySelector('.ux-aside-current')
+  const circleNext = document.querySelector('.ux-aside-next')
+
   if (aboutPosition > 0) {
-    circlePrevious.classList.add("ui-hidden");
-    circleNext.classList.remove("ui-hidden");
-    circleCurrent.innerHTML = 0;
-    circleNext.innerHTML = 1;
-    console.log("home");
+    circlePrevious.classList.add('ui-hidden')
+    circleNext.classList.remove('ui-hidden')
+    circleCurrent.innerHTML = 0
+    circleNext.innerHTML = 1
   } else if (aboutPosition < 0 && projectsPosition > 200) {
-    circlePrevious.classList.remove("ui-hidden");
-    circleNext.classList.remove("ui-hidden");
-    circlePrevious.innerHTML = 0;
-    circleCurrent.innerHTML = 1;
-    circleNext.innerHTML = 2;
-    console.log("about");
+    circlePrevious.classList.remove('ui-hidden')
+    circleNext.classList.remove('ui-hidden')
+    circlePrevious.innerHTML = 0
+    circleCurrent.innerHTML = 1
+    circleNext.innerHTML = 2
   } else {
-    circlePrevious.classList.remove("ui-hidden");
-    circleNext.classList.add("ui-hidden");
+    circlePrevious.classList.remove('ui-hidden')
+    circleNext.classList.add('ui-hidden')
 
-    circlePrevious.innerHTML = 1;
-    circleCurrent.innerHTML = 2;
-    console.log("projects");
+    circlePrevious.innerHTML = 1
+    circleCurrent.innerHTML = 2
   }
-});
+})
+
+setInterval(generateSnowflake, 1000)

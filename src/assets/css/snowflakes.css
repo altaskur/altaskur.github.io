@@ -1,0 +1,28 @@
+.snowflake {
+    width: 20px;
+    height: 20px;
+
+    animation: falling 10s linear infinite, fadeOut 4s linear 1s;
+    animation-fill-mode: forwards;
+    position: fixed;
+}
+
+@keyframes falling {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
