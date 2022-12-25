@@ -1,6 +1,6 @@
 'use strict'
 
-import { generateSnowflake } from './snow'
+import { generateSnowflake } from './snow.js'
 
 const about = document.querySelector('#about-me')
 const projects = document.querySelector('#projects')
