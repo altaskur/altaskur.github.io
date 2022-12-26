@@ -8,6 +8,15 @@
     background-repeat: no-repeat;
 }
 
+.card .icon {
+
+    width: 27px;
+    height: 28px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .icon.menu {
     background-image: url("../img/icons/menu.svg");
 }

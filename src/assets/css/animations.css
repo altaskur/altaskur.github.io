@@ -61,14 +61,14 @@
 
 
 .ux-show {
-    transition: all 2s;
+    transition: all 0.8s;
 
     height: 270px;
     overflow: hidden;
 }
 
 .ux-hide {
-    transition: all 2s;
+    transition: all 0.8s;
 
 
     height: 0px;

@@ -1,0 +1,19 @@
+.bg-twitch:hover {
+    background-color: var(--twitch-color);
+
+}
+
+.bg-gitHub:hover {
+    background-color: var(--gitHub-color);
+
+}
+
+.bg-discord:hover {
+    background-color: var(--discord-color);
+
+}
+
+.bg-twitter:hover {
+    background-color: var(--twitter-color);
+
+}

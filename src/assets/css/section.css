@@ -12,4 +12,57 @@ section div.inner div.title-wrapper {
 
     text-align: left;
     justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+section div.inner article.item {
+    width: auto;
+    max-width: 70em;
+}
+
+section div.inner div.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 25px;
+}
+
+div.card-container div.card {
+    width: 73px;
+    height: 80px;
+
+
+    background: #6D6D6D;
+    border-radius: 10px;
+}
+
+div.card-container div.card div.head {
+
+    width: 100%;
+    height: 70%;
+    border-radius: 10% 10% 0% 0%;
+
+    padding: 8px 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 1s, box-shadow 0.5s;
+
+}
+
+div.card-container div.card div.head:hover {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+div.card-container div.card div.name {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
