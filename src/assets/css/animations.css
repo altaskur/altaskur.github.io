@@ -30,14 +30,13 @@
 }
 
 .snowflake {
-    width: 20px;
-    height: 20px;
-
-    animation: falling 10s infinite, fadeOut 4s 1s;
+    animation: falling 10s infinite, fadeOut 8s 1s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     position: fixed;
 }
+
+
 
 @keyframes falling {
     0% {
