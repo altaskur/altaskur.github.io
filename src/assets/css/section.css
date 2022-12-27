@@ -1,9 +1,14 @@
+section {
+    min-height: max-content;
+}
+
 section div.inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 18px;
     height: 100vh;
+    min-height: min-content;
 }
 
 section div.inner div.title-wrapper {
@@ -23,14 +28,15 @@ section div.inner article.item {
 
 section div.inner div.card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
     grid-template-rows: auto;
     gap: 25px;
 }
 
 div.card-container div.card {
-    width: 73px;
-    height: 80px;
+    width: 90px;
+    height: 100px;
 
 
     background: #6D6D6D;
@@ -40,7 +46,7 @@ div.card-container div.card {
 div.card-container div.card div.head {
 
     width: 100%;
-    height: 70%;
+    height: 80%;
     border-radius: 10% 10% 0% 0%;
 
     padding: 8px 6px;
@@ -58,11 +64,25 @@ div.card-container div.card div.head:hover {
 
 }
 
+#vscode div.card-container div.card div.head div.icon {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
 
 div.card-container div.card div.name {
+    overflow: hidden;
     width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: min-content;
+}
+
+div.name p {
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
 }

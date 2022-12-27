@@ -117,3 +117,8 @@ li {
 
     background-color: var(--color-border-secondary);
 }
+
+div.card div.name {
+
+    text-overflow: ellipsis;
+}
