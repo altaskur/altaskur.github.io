@@ -2,302 +2,68 @@
 <html lang="es">
 
 <head>
-    <title>Altaskur Site</title>
+  <meta charset="UTF-8">
+  <title>Altaskur Site</title>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="title" content="Altaskur Site" />
-    <meta name="description" content="Altaskur personal landing web" />
-    <meta name="keywords" content="Altaskur, Twitch, GitHub Pages, Landing Page" />
+  <meta name="title" content="Altaskur Site" />
+  <meta name="description" content="Altaskur personal landing web" />
+  <meta name="keywords" content="Altaskur, Twitch, GitHub Pages, Landing Page" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="Altaskur Site" />
-    <meta property="og:title" content="Altaskur Site" />
-    <meta property="og:description" content="Landing page for GitHub.io" />
-    <meta property="og:image" content="" />
-    <meta property="og:locale" content="es/ES" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="Altaskur Site" />
+  <meta property="og:title" content="Altaskur Site" />
+  <meta property="og:description" content="Landing page for GitHub.io" />
+  <meta property="og:image" content="" />
+  <meta property="og:locale" content="es/ES" />
 
-    <meta name="dc.language" content="es/ES" />
-    <meta name="dc.source" content="Url" />
-    <meta name="dc.title" content="Altaskur Site" />
-    <meta name="dc.description" content="Landing page for GitHub.io" />
+  <meta name="dc.language" content="es/ES" />
+  <meta name="dc.source" content="Url" />
+  <meta name="dc.title" content="Altaskur Site" />
+  <meta name="dc.description" content="Landing page for GitHub.io" />
 
-    <link rel="shortcut icon" href="./src/assets/img/logos/altas_logo.png" />
+  <link rel="shortcut icon" href="/img/altas_logo.png" />
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    html,
+    body {
+      background: #130919;
+    }
 
-    <link rel="stylesheet" type="text/css" href="/src/assets/css/styles.css">
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
 
-    <link rel="stylesheet" type="text/css"
-        href="./src/assets/vendor/bootstrap-icons-1.9.1/bootstrap-icons-1.9.1/bootstrap-icons.css">
+      & nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div id="snowflake-container"></div>
-    <div class="image-season">
-        <div class="image-season-inner">
-
-        </div>
-    </div>
-
-    <header>
-        <div class="inner">
-            <div class="menu">
-                <div class="item icon altasLogo"></div>
-                <span class="item text">Principal</span>
-                <div class="item icon menu"></div>
-            </div>
-            <ul class="nav ux-hide">
-                <li>
-                    <a href="#aboutme">
-                        <div>🙋</div>
-                        <div>Sobre mí</div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#social">
-                        <div>🥅</div>
-                        <div>Redes</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#vscode">
-                        <div class="icon vscode"></div>
-                        <div>Vscode</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div>🧪</div>
-                        <div>Proyectos</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div>📚</div>
-                        <div>Apuntes</div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <aside>
-        <div class="aside-inner">
-            <div class="aside-cnt">
-
-                <div class="circle circle-small ux-aside-previous ui-hidden">0</div>
-                <div class="circle circle-regular ux-aside-current">1</div>
-                <div class="circle circle-small ux-aside-next ">2</div>
-
-            </div>
-        </div>
-    </aside>
-    <main>
-        <div class="inner">
-            <section id="home">
-                <div class="inner">
-                    <div class="item">
-                        <div class="subitem">
-                            <div class="icon altasLogo"></div>
-                        </div>
-                        <ul class="subitem">
-                            <li>
-                                <h2 class="title">Altaskur</h2>
-                            </li>
-                            <li>
-                                <h3 class="subtitle">Web developer student</h3>
-                            </li>
-                            <li>
-                                <ul class="logosList">
-                                    <li>
-                                        <div class="icon typeScript"></div>
-                                    </li>
-      
-                                    <li>
-                                        <div class="icon javaScript"></div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon nodejs"></div>
-                                    </li>
-                                    <li>
-                                        <div class="icon electronjs"></div>
-                                    </li>
-                                    <li>
-                                        <div class="icon vite"></div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        <div class="icon arrow-down ui-down"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="aboutme">
-                <div class="inner">
-                    <div class="item">
-                        <div class="title-wrapper">
-                            <h2 class="title">🙋 Sobre mi</h2>
-                        </div>
-                        <ul class="logosList">
-                            <li>
-                                <div class="icon typeScript"></div>
-                            </li>
-
-                            <li>
-                                <div class="icon javaScript"></div>
-                            </li>
-
-                            <li>
-                                <div class="icon nodejs"></div>
-                            </li>
-                            <li>
-                                <div class="icon electronjs"></div>
-                            </li>
-                            <li>
-                                <div class="icon vite"></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <article class="item">
-                        <p>👋 ¡Hola soy Altaskur!</p>
-                        <p>Soy 👨‍🎓estudiante de programación y un entusiasta del autoaprendizaje y la experimentación.
-                            Me dedico principalmente hacer directos en Twitch haciendo pequeños proyectos practicando un concepto o solucionar una pequeña necesidad.
-                        </p>
-                        <p>
-                            Actualmente compagino los directos con mis estudios de ciclo superior de de desarrollo de aplicaciones web D.A.W. usando los directos como principal apoyo a la creación de mi portafolio en GitHub y a mi autoaprendizaje paralelo.
-                            </br>
-                            JavaScript es lenguaje principal en mis proyectos, apoyándome en este para hacer aplicaciones de escritorio utilizando la librería Electron-JS.
-                        </p>
-                    </article>
-                    <div class="item">
-                        <div class="icon arrow-down ui-down"></div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="social">
-                <div class="inner">
-                    <div class="item">
-                        <div class="title-wrapper">
-                            <h2 class="title">🥅 Redes</h2>
-                        </div>
-                        <ul class="logosList">
-                            <li>
-                                <div class="icon typeScript"></div>
-                            </li>
-
-                            <li>
-                                <div class="icon javaScript"></div>
-                            </li>
-
-                            <li>
-                                <div class="icon nodejs"></div>
-                            </li>
-                            <li>
-                                <div class="icon electronjs"></div>
-                            </li>
-                            <li>
-                                <div class="icon vite"></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-container">
-
-                        <div class="card">
-                            <div class="head bg-twitch">
-                                <div class="icon twitchWhite"></div>
-                            </div>
-                            <div class="name">
-                                <p>Twitch</p>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="head bg-gitHub">
-                                <div class="icon githubWhite"></div>
-                            </div>
-                            <div class="name">
-                                <p>GitHub</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="head bg-twitter">
-                                <div class="icon twitterWhite"></div>
-                            </div>
-                            <div class="name">
-                                <p>Twitter</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="head bg-discord">
-                                <div class="icon discordWhite"></div>
-                            </div>
-                            <div class="name">
-                               <p>Discord</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="icon arrow-down ui-down"></div>
-                    </div>
-                </div>
-            </section>
-            <section id="vscode">
-                <div class="inner">
-                    <div class="item">
-                        <div class="title-wrapper">
-                            <h2 class="title"><div class="icon vscode"></div> vscode</h2>
-                        </div>
-                        <ul class="logosList">
-                            <li>
-                                <div class="icon typeScript"></div>
-                            </li>
-
-                            <li>
-                                <div class="icon javaScript"></div>
-                            </li>
-
-                            <li>
-                                <div class="icon nodejs"></div>
-                            </li>
-                            <li>
-                                <div class="icon electronjs"></div>
-                            </li>
-                            <li>
-                                <div class="icon vite"></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-container">
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <div class="inner">
-            <div class="inner">
-                <a href="http://" class="item ">
-                    <div class="icon twitterWhite"></div> 
-                    <span>Twitter</span>
-                </a>
-                <a href="http://" class="item">
-                    <div class="icon twitchWhite"></div> <span>Twitch</span>
-                </a>
-                <a href="http://" class="item ">
-                    <div class="icon githubWhite"></div> <span>Github</span>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <script type="module" src="./src/js/main.js"></script>
+  <main id="app">
+    <h1>Altaskur</h1>
+    <nav>
+      <a href="https://www.twitch.tv/altaskur" target="_blank">Twitch</a>
+      <a href="https://github.com/altaskur" target="_blank">GitHub</a>
+      <a href="https://dev.to/altaskur" target="_blank">Dev.to</a>
+      <a href="https://codepen.io/altaskur" target="_blank">CodePen</a>
+    </nav>
+  </main>
 </body>
+
+<script src="main.js"></script>
 
 </html>

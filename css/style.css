@@ -1,0 +1,49 @@
+@import url('normalize.css');
+@import url('font.css');
+
+:root {
+  --font-color:rgb(255 255 255 / 87%);
+  --font-color-variant:rgb(255 255 255 / 30%);
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+  color-scheme: light dark;
+  color: var(--font-color);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 600;
+  color: var(--font-color);
+  text-decoration: inherit;
+  transition: color 0.1s ease-in-out;
+
+  &:not(:hover) {
+    color: var(--font-color-variant);
+    transition: color 0.2s ease-in-out;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
