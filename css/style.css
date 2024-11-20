@@ -1,49 +1,72 @@
 @import url('normalize.css');
+@import url('variables.css');
 @import url('font.css');
+@import url('elements.css');
 
-:root {
-  --font-color:rgb(255 255 255 / 88%);
-  --font-color-variant:rgb(255 255 255 / 60%);
+* {
+  box-sizing: border-box;
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
-  color-scheme: light dark;
-  color: var(--font-color);
-  background-color: #242424;
-  font-synthesis: none;
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
 }
 
-a {
-  font-weight: 600;
-  color: var(--font-color);
-  text-decoration: inherit;
-  transition: color 0.1s ease-in-out;
-
-  &:not(:hover) {
-    color: var(--font-color-variant);
-    transition: color 0.2s ease-in-out;
-  }
+html,
+body {
+  background: #130919;
 }
 
 body {
   margin: 0;
   display: flex;
   place-items: center;
+  width: 100%;
   min-width: 320px;
+  height: 100%;
   min-height: 100vh;
+
+  & main.social-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1280px;
+    text-align: center;
+
+    & h1.h1 {
+      margin: 0;
+      margin-bottom: 8px;
+      font-size: 3.2em;
+      line-height: 1.1;
+      writing-mode: vertical-rl;
+      text-orientation: sideways;
+      text-align: left;
+      transform: rotate(180deg);
+    }
+
+    & nav.nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      height: 100%;
+      font-size: 1.4rem;
+
+      & a.li-a {
+        font-weight: 600;
+        color: var(--font-color);
+        text-decoration: inherit;
+        transition: color 0.1s ease-in-out;
+
+        &:not(:hover) {
+          color: var(--font-color-variant);
+          transition: color 0.2s ease-in-out;
+        }
+      }
+    }
+  }
 }
-
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-
