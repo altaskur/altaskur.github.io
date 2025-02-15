@@ -1,0 +1,17 @@
+:root {
+    --font-family: 'Inter-Bold', sans-serif;
+
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+html {
+    background: #382F35;
+}
