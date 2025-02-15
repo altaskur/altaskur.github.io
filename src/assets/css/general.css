@@ -1,5 +1,5 @@
 :root {
-    --font-family: 'Inter-Bold', sans-serif;
+    --font-family: 'Inter-Regular', sans-serif;
 
     color-scheme: light dark;
     font-synthesis: none;
@@ -13,5 +13,6 @@
 }
 
 html {
-    background: #382F35;
+    background: var(--bg-dark);
+    color: var(--text-color);
 }

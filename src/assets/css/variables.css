@@ -3,4 +3,21 @@
     --dm-bg-light: 4D4048;
     --dm-text-color: #D8D8D8;
     --dm-text-color-bg: rgba(216 216 16 / 28%);
+    --lg-bg-dark: #D9C6CC;
+    --lg-bg-light: #E6D8DD;
+    --lg-text-color: #171717;
+}
+
+[data-theme="dark"] {
+    --bg-dark: var(--dm-bg-dark);
+    --bg-light: var(--dm-bg-light);
+    --text-color: var(--dm-text-color);
+    --text-color-bg: var(--dm-text-color-bg);
+}
+
+[data-theme="light"] {
+    --bg-dark: var(--lg-bg-dark);
+    --bg-light: var(--lg-bg-light);
+    --text-color: var(--lg-text-color);
+    --text-color-bg: var(--lg-text-color-bg);
 }

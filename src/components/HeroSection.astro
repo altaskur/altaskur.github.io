@@ -1,0 +1,66 @@
+<section>
+  <div class="section-container">
+    <div>
+      <figure>
+        <img
+          class="dark"
+          src="https://picsum.photos/300/300"
+          height="200"
+          width="200"
+          alt=""
+          srcset=""
+        />
+        <img
+          class="light"
+          src="https://picsum.photos/300/301"
+          height="200"
+          width="200"
+          alt=""
+          srcset=""
+        />
+      </figure>
+    </div>
+    <div>
+      <p>Hola mundo</p>
+      <h1>Soy Altaskur</h1>
+      <p>y soy Desarrollador web</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 2rem;
+
+    .section-container {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+</style>
+
+<style is:global>
+  [data-theme="dark"] .dark {
+    display: block;
+  }
+  [data-theme="dark"] .light {
+    display: none;
+  }
+  [data-theme="light"] .dark {
+    display: none;
+  }
+  [data-theme="light"] .light {
+    display: block;
+  }
+</style>

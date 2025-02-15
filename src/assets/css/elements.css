@@ -1,0 +1,14 @@
+button {
+    background: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    color: var(--text-color);
+}
+
+figure {
+    margin: 0;
+}

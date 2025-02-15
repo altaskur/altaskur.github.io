@@ -1,0 +1,97 @@
+---
+import SunsetIcon from "./SunsetIcon.astro";
+import SunIcon from "./SunIcon.astro";
+---
+
+<header>
+  <div>
+    <figure>
+      <img
+        src="/assets/images/altas-logo.png"
+        width="38"
+        height="38"
+        alt="Logo"
+      />
+    </figure>
+  </div>
+  <div>
+    <ul>
+      <a href="">Inicio</a>
+      <a href="">Blog</a>
+      <a href="">Charlas</a>
+      <a href="">Sobre mí</a>
+      <a href="">RRSS</a>
+      <button>
+        <span class="icon-sun"><SunIcon /></span>
+        <span class="icon-sunset"><SunsetIcon /></span>
+      </button>
+    </ul>
+  </div>
+</header>
+
+<style is:global>
+  [data-theme="dark"] .icon-sun {
+    display: block;
+  }
+  [data-theme="dark"] .icon-sunset {
+    display: none;
+  }
+  [data-theme="light"] .icon-sun {
+    display: none;
+  }
+  [data-theme="light"] .icon-sunset {
+    display: block;
+  }
+</style>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+<script type="module">
+  const themeKey = "theme-preference";
+
+  // Obtiene la preferencia almacenada o la detecta desde el sistema
+  function getThemePreference() {
+    return localStorage.getItem(themeKey) || "dark";
+  }
+
+  // Guarda la preferencia y actualiza el atributo data-theme
+  function setThemePreference(theme) {
+    localStorage.setItem(themeKey, theme);
+    document.documentElement.setAttribute("data-theme", theme);
+  }
+
+  // Alterna el tema y actualiza el atributo global
+  function toggleTheme() {
+    const current = getThemePreference();
+    const newTheme = current === "light" ? "dark" : "light";
+    setThemePreference(newTheme);
+  }
+
+  // Al cargar el contenido se establece el tema inicial y se agrega el evento al botón
+  document.addEventListener("DOMContentLoaded", () => {
+    setThemePreference(getThemePreference());
+    const btn = document.querySelector("button");
+    btn.addEventListener("click", toggleTheme);
+  });
+
+  // Si cambia la preferencia del sistema en tiempo real, actualiza el tema
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", (e) => {
+      const newTheme = e.matches ? "dark" : "light";
+      setThemePreference(newTheme);
+    });
+</script>
