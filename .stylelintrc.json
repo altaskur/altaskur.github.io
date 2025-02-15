@@ -1,7 +1,0 @@
-{
-  "extends": ["stylelint-config-standard"],
-  "ignoreFiles": [
-    "public/assets/css/normalize.css",
-    "public/assets/css/reset.css"
-  ]
-}
