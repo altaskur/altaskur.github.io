@@ -1,17 +1,25 @@
 ---
 import Header from "@components/Header.astro";
 import HeroSection from "./HeroSection.astro";
+import Wave from "./Wave.astro";
 ---
 
 <main>
   <Header />
   <HeroSection />
+  <Wave />
 </main>
+<section class="bg"></section>
 
 <style>
   main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+
+  section.bg {
+    background: var(--bg-light);
+    height: 100vh;
   }
 </style>
