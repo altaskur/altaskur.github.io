@@ -3,5 +3,15 @@ import Header from "@components/Header.astro";
 import HeroSection from "./HeroSection.astro";
 ---
 
-<Header />
-<HeroSection />
+<main>
+  <Header />
+  <HeroSection />
+</main>
+
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+</style>

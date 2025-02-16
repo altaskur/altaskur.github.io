@@ -1,4 +1,12 @@
 @font-face {
+    font-family: Inter-extraLight;
+    font-style: normal;
+    font-weight: 200;
+    src: local("Inter-extraLight"),
+        url("/assets/fonts/Inter_24pt-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
     font-family: Inter-Light;
     font-style: normal;
     font-weight: 200;
@@ -20,4 +28,39 @@
     font-weight: 700;
     src: local("Inter-Bold"),
         url("/assets/fonts/Inter_28pt-Bold.ttf") format("truetype");
+}
+
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.text-extra-light {
+    font-family: Inter-extraLight, sans-serif;
+    font-size: clamp(4.1rem, 3vw, 1.9rem);
+    margin: .5rem 0 0;
+    font-weight: 200;
+    text-rendering: geometricprecision;
+}
+
+.text-light {
+    font-family: Inter-Light, sans-serif;
+    margin: .5rem 0 0;
+    font-size: clamp(2rem, 6vw, 4rem);
+    text-rendering: geometricprecision;
+}
+
+.text-regular {
+    font-family: Inter-Regular, sans-serif;
+    font-size: clamp(1.1rem, 3vw, 1.9rem);
+    margin: .5rem 0 0;
+    text-rendering: geometricprecision;
+}
+
+.text-bold {
+    font-family: Inter-Bold, sans-serif;
+    font-size: clamp(2rem, 6vw, 4rem);
+    line-height: 1.25;
+    text-rendering: geometricprecision;
 }

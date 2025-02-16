@@ -1,52 +1,134 @@
-<section>
+---
+import LinkedIn from "@components/icons/LinkedIn.astro";
+import TickTock from "@components/icons/TickTock.astro";
+import YouTubeIcon from "@components/icons/YouTubeIcon.astro";
+import CodePen from "./icons/CodePen.astro";
+import GitHub from "./icons/GitHub.astro";
+import BlueSky from "./icons/BlueSky.astro";
+import Twitter from "./icons/Twitter.astro";
+---
+
+<section class="hero">
   <div class="section-container">
-    <div>
+    <div class="figure-container">
       <figure>
         <img
           class="dark"
-          src="https://picsum.photos/300/300"
-          height="200"
-          width="200"
+          src="/assets/images/altas-dark.png"
+          height="253"
+          width="253"
           alt=""
           srcset=""
         />
         <img
           class="light"
-          src="https://picsum.photos/300/301"
-          height="200"
-          width="200"
+          src="/assets/images/altas-light.png"
+          height="253"
+          width="253"
           alt=""
           srcset=""
         />
       </figure>
     </div>
-    <div>
-      <p>Hola mundo</p>
-      <h1>Soy Altaskur</h1>
-      <p>y soy Desarrollador web</p>
+    <div class="text-container">
+      <h1>
+        Hola mundo
+        <span>Soy Altaskur</span>
+      </h1>
+      <p class="text-regular">y soy Desarrollador web</p>
+      <ul class="social-media">
+        <li>
+          <button>
+            <LinkedIn />
+          </button>
+        </li>
+        <li>
+          <button>
+            <TickTock />
+          </button>
+        </li>
+        <li>
+          <button>
+            <YouTubeIcon />
+          </button>
+        </li>
+        <li>
+          <button>
+            <CodePen />
+          </button>
+        </li>
+        <li>
+          <button>
+            <GitHub />
+          </button>
+        </li>
+        <li>
+          <button>
+            <BlueSky />
+          </button>
+        </li>
+        <li>
+          <button>
+            <Twitter />
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
 
 <style>
-  section {
+  section.hero {
     display: flex;
     flex-direction: column;
     place-items: center;
     gap: 2rem;
 
-    .section-container {
+    div.section-container {
       display: flex;
       gap: 2rem;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
     }
-  }
 
-  img {
-    border-radius: 50%;
-  }
+    div.figure-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  h1 {
-    font-size: 2rem;
+    div.text-container {
+      & h1 {
+        font-family: Inter-extraLight;
+        font-size: 57px;
+
+        & span {
+          font-family: Inter-bold;
+          font-size: 48px;
+          letter-spacing: 0.03em;
+          display: block;
+        }
+      }
+
+      & p {
+        font-size: 28px;
+        margin: 0.5rem 0 0;
+      }
+
+      & ul.social-media {
+        display: flex;
+
+        margin-top: 1rem;
+        margin-left: -8px;
+      }
+    }
+    button img {
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+    }
   }
 </style>
 
