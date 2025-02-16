@@ -7,6 +7,7 @@
       height="268"
       viewBox="0 0 2880 408"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
     >
       <path
         fill-rule="evenodd"
@@ -21,6 +22,7 @@
       height="268"
       viewBox="0 0 2880 408"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
     >
       <path
         fill-rule="evenodd"
@@ -35,18 +37,21 @@
   .wave-container {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    min-width: 1024px; /* Ajusta este valor según el ancho mínimo deseado */
   }
 
   .wave-track {
     display: flex;
+    height: 268px;
     width: 200%;
     animation: continuous 10s linear infinite;
   }
 
   .wave {
-    /* Cada SVG ocupa la mitad del ancho del track */
+    height: 268px;
     width: 50%;
-    fill: var(--bg-light);
+    fill: var(--bg-dark);
   }
 
   @keyframes continuous {
