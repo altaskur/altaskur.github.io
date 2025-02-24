@@ -1,0 +1,85 @@
+---
+const { XMLParser } = await import("fast-xml-parser");
+const parser = new XMLParser({ ignoreAttributes: false });
+
+interface YTEntry {
+  title: string;
+  link: string;
+  author: {
+    name: string;
+    uri: string;
+  };
+  published: string;
+  thumbnail: {
+    url: string;
+    width: string;
+    height: string;
+  };
+}
+
+const YouTubePath =
+  "https://www.youtube.com/feeds/videos.xml?playlist_id=PLlgeLnJGwhJHCo99dHeQsQoIWi4Elj_W8";
+
+const request = fetch(YouTubePath);
+const response = await request;
+
+const parsedData = parser.parse(await response.text());
+
+const entries: YTEntry[] = parsedData.feed.entry.map((entry: any) => ({
+  title: entry.title,
+  link: entry.link.href,
+  author: {
+    name: entry.author.name,
+    uri: entry.author.uri,
+  },
+  published: entry.published,
+  thumbnail: {
+    url: entry["media:group"]["media:thumbnail"]["@_url"],
+    width: entry["media:group"]["media:thumbnail"]["@_width"],
+    height: entry["media:group"]["media:thumbnail"]["@_height"],
+  },
+}));
+---
+
+<section class="youtube-section">
+  <h2>YouTube</h2>
+  <p>Últimas conferencias y charlas en mi canal de YouTube</p>
+  <ul>
+    {
+      entries.map((entry: YTEntry) => (
+        <li>
+          <figure>
+            <img src={entry.thumbnail.url} alt={entry.title} />
+            <figcaption>
+              {entry.title} -{" "}
+              <a
+                href={entry.author.uri}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {entry.author.name}
+              </a>
+            </figcaption>
+          </figure>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+
+    & li {
+      flex: 1 1 300px;
+      margin: 1rem;
+
+      & figure {
+        max-width: 384px;
+      }
+    }
+  }
+</style>

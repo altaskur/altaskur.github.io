@@ -48,6 +48,7 @@ import SunsetIcon from "@components/icons/SunsetIcon.astro";
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 8px 16px 8px 8px;
   }
 
   ul {
@@ -61,32 +62,27 @@ import SunsetIcon from "@components/icons/SunsetIcon.astro";
 <script type="module">
   const themeKey = "theme-preference";
 
-  // Obtiene la preferencia almacenada o la detecta desde el sistema
   function getThemePreference() {
     return localStorage.getItem(themeKey) || "dark";
   }
 
-  // Guarda la preferencia y actualiza el atributo data-theme
   function setThemePreference(theme) {
     localStorage.setItem(themeKey, theme);
     document.documentElement.setAttribute("data-theme", theme);
   }
 
-  // Alterna el tema y actualiza el atributo global
   function toggleTheme() {
     const current = getThemePreference();
     const newTheme = current === "light" ? "dark" : "light";
     setThemePreference(newTheme);
   }
 
-  // Al cargar el contenido se establece el tema inicial y se agrega el evento al botón
   document.addEventListener("DOMContentLoaded", () => {
     setThemePreference(getThemePreference());
     const btn = document.querySelector("button");
     btn.addEventListener("click", toggleTheme);
   });
 
-  // Si cambia la preferencia del sistema en tiempo real, actualiza el tema
   window
     .matchMedia("(prefers-color-scheme: dark)")
     .addEventListener("change", (e) => {
