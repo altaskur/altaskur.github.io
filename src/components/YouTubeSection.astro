@@ -71,11 +71,14 @@ const entries: YTEntry[] = parsedData.feed.entry.map((entry: any) => ({
   ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 2.5rem;
+    gap: 2.5rem;
 
     & li {
-      flex: 1 1 300px;
-      margin: 1rem;
+      display: flex;
+      align-items: space-between;
+      gap: 2.5rem;
 
       & figure {
         max-width: 384px;
