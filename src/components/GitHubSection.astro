@@ -72,8 +72,7 @@ const repos: GitHubRepo[] = data.map((repo: any) => ({
                   Forks
                 </div>
               )}
-
-              {<GitHub />}
+              <div class="gitLogo">{<GitHub />}</div>
             </div>
 
             <div>
@@ -131,6 +130,9 @@ const repos: GitHubRepo[] = data.map((repo: any) => ({
               margin: 0 auto;
               height: 32px;
               width: 32px;
+
+              & .gitLogo {
+              }
             }
           }
         }
