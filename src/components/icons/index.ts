@@ -5,3 +5,4 @@ export { default as CodePen } from "./CodePen.astro";
 export { default as GitHub } from "./GitHub.astro";
 export { default as BlueSky } from "./BlueSky.astro";
 export { default as Twitter } from "./Twitter.astro";
+export { default as StarIcon } from "./StarIcon.astro";
