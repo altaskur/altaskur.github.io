@@ -1,0 +1,78 @@
+---
+import { githubRequest } from "../../mocks";
+import GithubCard from "./GithubCard.astro";
+import type { GitHubRepo } from "../../interfaces";
+
+const GitHubPath = "https://api.github.com/users/Altaskur/repos?per_page=5";
+
+const offLine: boolean = true;
+let data: any[] = [];
+
+if (!offLine) {
+  const request = fetch(GitHubPath);
+  const response = await request;
+  data = await response.json();
+}
+
+if (offLine) {
+  data = githubRequest;
+}
+
+// Mapeo de los datos a la interfaz GitHubRepo
+const repos: GitHubRepo[] = data.map((repo: any) => ({
+  name: repo.name,
+  description: repo.description || "", // Valor por defecto en caso de que sea null
+  html_url: repo.html_url,
+  stargazers_count: repo.stargazers_count,
+  forks_count: repo.forks_count,
+  language: repo.language || "", // Valor por defecto en caso de que sea null
+}));
+---
+
+<section class="github-section">
+  <h2>GitHub</h2>
+  <p>Últimos repositorios en mi cuenta de GitHub</p>
+  <ul>
+    {
+      repos.map((repo: GitHubRepo) => (
+        <li class="gitHub-card">
+          <GithubCard repo={repo} />
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  .github-section {
+    margin-top: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    opacity: 0.8;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .gitHub-card {
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .gitHub-card:hover {
+    transform: translateY(-5px);
+  }
+</style>

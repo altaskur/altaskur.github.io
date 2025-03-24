@@ -1,0 +1,157 @@
+---
+import { StarIcon, GitHub } from "../icons";
+
+const { repo } = Astro.props;
+
+const languageColors: { [key: string]: string } = {
+  JavaScript: "#f1e05a",
+  TypeScript: "#3178c6",
+  Python: "#3776ab",
+  HTML: "#e34c26",
+  CSS: "#264de4",
+};
+
+const languageColor = languageColors[repo.language] || "#ccc";
+---
+
+<div class="repo-card">
+  <div class="repo-info">
+    <h3>{repo.name}</h3>
+    <p>{repo.description}</p>
+
+    <div class="repo-stats">
+      {
+        repo.stargazers_count > 0 && (
+          <div class="stat-item stars">
+            <StarIcon />
+            <span>{repo.stargazers_count}</span>
+            <span class="label">Stars</span>
+          </div>
+        )
+      }
+
+      {
+        repo.forks_count > 0 && (
+          <div class="stat-item forks">
+            <span>{repo.forks_count}</span>
+            <span class="label">Forks</span>
+          </div>
+        )
+      }
+
+      {
+        repo.watchers_count && repo.watchers_count > 0 && (
+          <div class="stat-item watchers">
+            <span>{repo.watchers_count}</span>
+            <span class="label">Watchers</span>
+          </div>
+        )
+      }
+
+      <div class="git-logo">
+        <GitHub />
+      </div>
+    </div>
+
+    <div class="language-indicator">
+      <hr
+        style={`background-color: ${languageColor}; height: 4px; border: none;`}
+      />
+      {repo.language && <span class="language-label">{repo.language}</span>}
+    </div>
+
+    <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+      Ver en GitHub
+    </a>
+  </div>
+</div>
+
+<style>
+  .repo-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .repo-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .repo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 159px;
+    max-width: 384px;
+  }
+
+  h3 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0;
+    flex-grow: 1;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    opacity: 0.8;
+  }
+
+  .repo-stats {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .stat-item :global(svg) {
+    width: 20px;
+    height: 20px;
+  }
+
+  .git-logo {
+    margin-left: auto;
+  }
+
+  .git-logo :global(svg) {
+    width: 24px;
+    height: 24px;
+  }
+
+  .language-indicator {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .language-label {
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--bg-dark);
+    transition: background-color 0.2s ease;
+  }
+
+  a:hover {
+    background-color: rgba(var(--text-color-rgb), 0.2);
+  }
+</style>
